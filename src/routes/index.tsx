@@ -213,8 +213,7 @@ function FormPage() {
           <div className="pt-4">
             <button
               type="submit"
-              disabled={!valid}
-              className="group relative w-full overflow-hidden rounded-sm border border-gold bg-gradient-to-r from-[oklch(0.55_0.15_50)] to-[oklch(0.78_0.13_78)] px-8 py-5 font-dossier text-sm font-bold text-gold-foreground shadow-glow transition-all hover:brightness-110 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:brightness-100"
+              className="group relative w-full overflow-hidden rounded-sm border border-gold bg-gradient-to-r from-[oklch(0.55_0.15_50)] to-[oklch(0.78_0.13_78)] px-8 py-5 font-dossier text-sm font-bold tracking-wider text-[oklch(0.15_0.02_60)] shadow-glow transition-all hover:brightness-110"
             >
               <span className="relative z-10">Submit to Archives</span>
             </button>
