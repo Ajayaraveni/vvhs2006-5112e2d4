@@ -227,3 +227,24 @@
   .animate-shimmer-gold { animation: shimmer-gold 4s ease-in-out infinite; }
   .animate-drift { animation: drift 18s ease-in-out infinite; }
 }
+
+/* Submit button: enforce high-contrast text across all browsers and states */
+.btn-archive-submit,
+.btn-archive-submit:hover,
+.btn-archive-submit:focus,
+.btn-archive-submit:active,
+.btn-archive-submit:visited,
+.btn-archive-submit:disabled,
+.btn-archive-submit[disabled],
+.btn-archive-submit *,
+.btn-archive-submit:hover *,
+.btn-archive-submit:focus *,
+.btn-archive-submit:active *,
+.btn-archive-submit:disabled * {
+  color: #1a1208 !important;
+  -webkit-text-fill-color: #1a1208 !important;
+  opacity: 1 !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  text-shadow: none !important;
+}
