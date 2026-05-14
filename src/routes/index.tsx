@@ -47,7 +47,7 @@ function FormPage() {
     navigate({ to: "/success" });
   };
 
-  const valid = name && gender && section && m1 && m2 && famous.length > 0;
+  const valid = name && gender && section && m1 && m2 && famous.length > 0 && photo;
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-background texture-grain scanlines">
