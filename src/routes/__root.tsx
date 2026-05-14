@@ -76,10 +76,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Classified student records reopening after 20 years. A cinematic reunion experience." },
       { name: "author", content: "Cognosy AI" },
       { property: "og:title", content: "Batch 2006 Archive Access" },
-      { property: "og:description", content: "Classified student records reopening after 20 years." },
+      { property: "og:description", content: "Classified student records reopening after 20 years. A cinematic reunion experience." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Batch 2006 Archive Access" },
+      { name: "twitter:description", content: "Classified student records reopening after 20 years. A cinematic reunion experience." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/efa5c967-6aec-4710-aac2-55485a38fe7e/id-preview-11335fd8--ea329ad0-16e0-4e1d-84da-8c1252e17a9d.lovable.app-1778748101528.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/efa5c967-6aec-4710-aac2-55485a38fe7e/id-preview-11335fd8--ea329ad0-16e0-4e1d-84da-8c1252e17a9d.lovable.app-1778748101528.png" },
     ],
     links: [
       {
