@@ -286,13 +286,8 @@ function PillButton({
 
 function CornerStamps() {
   return (
-    <>
-      <div className="pointer-events-none absolute -top-3 left-6 bg-background px-3 font-dossier text-[10px] text-sepia">
-        FILE №2006/AR · CLASSIFIED
-      </div>
-      <div className="pointer-events-none absolute -bottom-3 right-6 bg-background px-3 font-dossier text-[10px] text-sepia">
-        AUTHORIZATION REQUIRED
-      </div>
-    </>
+    <div className="pointer-events-none absolute -top-3 left-6 bg-background px-3 font-dossier text-[10px] text-sepia">
+      FILE №2006/AR · CLASSIFIED
+    </div>
   );
 }
