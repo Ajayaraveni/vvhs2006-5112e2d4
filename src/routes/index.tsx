@@ -181,7 +181,7 @@ function FormPage() {
             </div>
           </Field>
 
-          <Field label="Selfie Upload" optional>
+          <Field label="Selfie Upload" required>
             <div className="flex items-center gap-5">
               <button
                 type="button"
