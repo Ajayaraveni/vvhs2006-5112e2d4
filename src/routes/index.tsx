@@ -213,15 +213,9 @@ function FormPage() {
           <div className="pt-4">
             <button
               type="submit"
-              style={{
-                WebkitAppearance: "none",
-                appearance: "none",
-                WebkitTextFillColor: "#1a1208",
-                color: "#1a1208",
-              }}
-              className="group relative w-full overflow-hidden rounded-sm border border-gold bg-gradient-to-r from-[oklch(0.55_0.15_50)] to-[oklch(0.78_0.13_78)] px-8 py-5 font-dossier text-sm font-bold tracking-wider shadow-glow transition-all hover:brightness-110"
+              className="btn-archive-submit group relative w-full overflow-hidden rounded-sm border border-gold bg-gradient-to-r from-[oklch(0.55_0.15_50)] to-[oklch(0.78_0.13_78)] px-8 py-5 font-dossier text-sm font-bold tracking-wider shadow-glow transition-all hover:brightness-110"
             >
-              <span className="relative z-10" style={{ color: "#1a1208", WebkitTextFillColor: "#1a1208" }}>Submit to Archives</span>
+              <span className="relative z-10">Submit to Archives</span>
             </button>
           </div>
         </form>
