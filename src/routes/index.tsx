@@ -60,7 +60,7 @@ function FormPage() {
           memory1: m1,
           memory2: m2,
           memory3: m3,
-          famousFor: famous,
+          famous_for: famous,
           selfie: photo,
           submittedAt: new Date().toISOString(),
         }),
