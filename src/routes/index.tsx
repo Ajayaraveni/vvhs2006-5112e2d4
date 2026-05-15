@@ -42,9 +42,35 @@ function FormPage() {
     reader.readAsDataURL(f);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    navigate({ to: "/success" });
+    if (submitting) return;
+    setSubmitting(true);
+    try {
+      await fetch("https://n8n.srv938621.hstgr.cloud/webhook/82bfd902-65a0-4635-a883-30366fea6459", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          gender,
+          section,
+          rollNumber: roll,
+          memory1: m1,
+          memory2: m2,
+          memory3: m3,
+          famousFor: famous,
+          selfie: photo,
+          submittedAt: new Date().toISOString(),
+        }),
+      });
+    } catch (err) {
+      console.error("Submission failed", err);
+    } finally {
+      setSubmitting(false);
+      navigate({ to: "/success" });
+    }
   };
 
   const valid = name && gender && section && m1 && m2 && famous.length > 0 && photo;
